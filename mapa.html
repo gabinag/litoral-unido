@@ -29,5 +29,24 @@
       tabindex="0">
     </iframe>
   </div>
+
+  <script>
+    document.querySelector('.pin-coleta').addEventListener('click', function() {
+        const abaMapa = document.querySelector('.aba-mapa');
+        abaMapa.innerHTML = `
+            <div class="wrapper-aba">
+                <a href="index.html"><img src="./assets/images/icon-arrow.png" alt="Seta para voltar para tela inicial"></a>
+                <a href="index.html"><img src="./assets/images/logo.png" alt="Logo da Litoral Unido" class="logo"></a>
+            </div>
+            <div class="ponto-coleta">
+              <h3>Colégio Algusto Ferreira</h3>
+              <p class="ponto-num">Ponto de retirada 4</p>
+              <p class="endereco">R. Delphim Moreira, 87-55 - Embaré, Santos - SP, 11040-101</p>
+              <p class="estoque"><strong>Baixo estoque de doação!</strong> Recomendamos doação nesse ponto de coleta</p>
+              <a href="form.html" class="botao botao--mod">Doar neste local</a>
+            </div>
+        `;
+    });
+  </script>
 </body>
 </html>

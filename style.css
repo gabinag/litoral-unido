@@ -1,0 +1,85 @@
+:root {
+  --cor-fundo:  #EFEDED;
+  --azul-claro: #04A4D4;
+  --azul-escuro: #1E5E71;
+  --amarelo: #F99100;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-wrap: pretty;
+  list-style: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.quem-somos {
+  color: var(--azul-claro);
+}
+
+.botao {
+  color: #fff;
+  background-color: var(--azul-claro);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  font-weight: 600;
+}
+
+.botao--mod {
+  background-color: var(--amarelo);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+.container img {
+  width: min(450px, 100%);
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: var(--azul-claro);
+  font-weight: 800;
+}
+
+.paragrafo {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--azul-escuro);
+  font-weight: 500;
+}
+
+.paragrafo--mod {
+  color: var(--amarelo);
+}
+
+h2 {
+  color: var(--amarelo);
+  font-size: 3rem;
+}

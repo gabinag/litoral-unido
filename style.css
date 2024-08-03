@@ -12,13 +12,10 @@
   box-sizing: border-box;
   text-decoration: none;
   text-wrap: pretty;
-  list-style: none;
 }
 
-main {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 2rem;
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -26,17 +23,19 @@ header {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem .5rem;
   align-items: center;
 }
 
-ul {
+header ul {
   display: flex;
   gap: 1.5rem;
+  list-style: none;
 }
 
 .quem-somos {
   color: var(--azul-claro);
+  font-weight: 500;
 }
 
 .botao {
@@ -51,11 +50,22 @@ ul {
   background-color: var(--amarelo);
 }
 
+.background {
+  background-color: var(--cor-fundo);
+}
+
 .container {
   display: flex;
   align-items: center;
   gap: 4rem;
-  padding: 2rem 0;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  height: 90vh;
+}
+
+.container--sobre {
+  gap: 10rem;
 }
 
 .container img {
@@ -79,7 +89,70 @@ h1 {
   color: var(--amarelo);
 }
 
+.paragrafo--size {
+  max-width: 32rem;
+}
+
 h2 {
   color: var(--amarelo);
   font-size: 3rem;
+  max-width: 30rem;
+}
+
+.img-termometro {
+  max-width: 24rem;
+}
+
+.missao {
+  text-align: center;
+  padding: 6rem;
+  font-size: 2rem;
+  color: var(--azul-claro);
+  font-weight: 700;
+}
+
+.kit h3 {
+  font-size: 2.5rem;
+  color: var(--azul-escuro);
+}
+
+.kit ul {
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+  color: var(--azul-escuro);
+  list-style-position: inside;
+}
+
+.kit li {
+  margin-bottom: .5rem;
+}
+
+.botao--size {
+  font-size: 1.5rem;
+}
+
+.ir-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ir-mapa h3 {
+  font-size: 2.5rem;
+  color: var(--amarelo);
+}
+
+.ir-mapa img {
+  max-width: 10rem;
+  margin: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem;
+  color: var(--azul-escuro);
 }

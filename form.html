@@ -31,7 +31,7 @@
       <h1 class="titulo-forms">Cadastro de doador</h1>
       <h2 class="h2-label-forms">Preencha o formulário para que você poda fazer doações em um ponto de distribuição.</h2>
     </div>
-    <form class="div-forms">
+    <form class="div-forms" action="https://formspree.io/f/mgvwkdbb" method="POST">
       <label class="h2-label-forms" for="name">Nome Completo *</label>
       </br>
       <input class="input-forms" type="text" id="name" name="name" required>
@@ -42,7 +42,7 @@
         </div>
         <div class="input-group">
           <label class="h2-label-forms" for="telefone">Telefone *</label>
-          <input class="input-forms telefone" type="tel" id="phone" name="phone" pattern="([0-9]{2})[0-9]{4}-[0-9]{4}">
+          <input class="input-forms telefone" type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
         </div>
       </div>
       <div class="input-row">
@@ -70,7 +70,7 @@
         </div>
         <div class="input-group">
           <label class="h2-label-forms" for="complemento">Complemento</label>
-          <input class="input-forms complemento" type="text" id="complemento" name="complemento" required>
+          <input class="input-forms complemento" type="text" id="complemento" name="complemento">
         </div>
       </div>
       <h2 class="titulo-forms">Itens que serão doados</h2>
@@ -80,8 +80,8 @@
           <label class="h2-label-forms" for="ventilador">Ventilador</label>
         </div>
         <div>
-          <input class="input-donation" type="number" id="agua-potavel" name="agua potavel" min="0" placeholder="0">
-          <label class="h2-label-forms" for="agua-potavel">Água Potável</label>
+          <input class="input-donation" type="number" id="agua-potavel" name="agua potavel" min="1" placeholder="0" required>
+          <label class="h2-label-forms" for="agua-potavel">Água Potável *</label>
         </div>
         <div>
           <input class="input-donation" type="number" id="protetor-solar" name="protetor solar" min="0" placeholder="0">
@@ -103,6 +103,15 @@
     <p><strong>Direitos reservados a Pink Coders</strong></p>
     <p>© 2024 | Pink Coders</p>
   </footer>
+
+  <div id="confirmationMessage" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close-button-x">&times;</span>
+      <h2 class="h2-confirmationMessage">Seu formulário foi enviado com sucesso!</h2>
+      <p class="p-confirmationMessage">A Litoral Unido agradece a sua contribuição e entrará em contato, caso necessário.</p>
+      <span id="closeModal" class="close-button">Ok</span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

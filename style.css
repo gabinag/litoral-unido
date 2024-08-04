@@ -333,7 +333,6 @@ form {
 .input-group {
   display: flex;
   flex-direction: column;
-  
 }
 
 .email {
@@ -403,6 +402,85 @@ form {
   border: none;
   margin: 2rem 0 3rem;
   font-size: 1.2rem;
+  height: 50px;
   padding: .5rem 2rem;
   cursor: pointer;
+}
+
+.input-forms:hover {
+  background-color: #f2fafd;
+}
+
+.input-forms:focus {
+  background-color: #d1dbdf;
+}
+
+.btn-submit:hover {
+  background-color: #0d96bf;
+}
+
+/*----CAMPO DE CONFIRMAÇÃO DE ENVIO DE FORMULÁRIO----*/
+
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed; /* Fixo na tela */
+  z-index: 1000; /* Ficar sobre os outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite scroll se necessário */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 1000px;
+  height: 350px;
+  max-width: 500px;
+  position: relative; /* Adicionado para posicionar o botão "X" corretamente */
+  text-align: center;
+  border-radius: 20px;
+}
+
+.close-button-x {
+  color: #1E5E71;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  right: 21px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.close-button {
+  border-radius: 10px;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+  background-color: #F99100;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: #e18301;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.h2-confirmationMessage {
+  margin-top: 60px;
+  color: #04A4D4;
+  font-size: 30px;
+}
+
+.p-confirmationMessage {
+  margin-bottom: 35px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1E5E71;
 }

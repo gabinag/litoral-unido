@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Litoral Unido</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,6 +13,11 @@
 <body>
   <header>
     <a href="index.html"><img src="./assets/images/logo.png" alt="Logo Litoral Unido"></a>
+    <div class="hamburguer">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
     <nav>
       <ul>
         <li><a href="#quem-somos" class="quem-somos">Quem somos?</a></li>        
@@ -61,7 +67,7 @@
         <h3>Encontre o ponto de coleta mais próximo!</h3>
         <p class="paragrafo">Confira no mapa o local de coleta após preencher o formulário de doador.</p>
         <img src="./assets/images/marcador.webp" alt="Pin ou marcador de mapa em animação 3D">
-        <a href="" class="botao botao--size">Ver mapa</a>
+        <a href="mapa.html" class="botao botao--size">Ver mapa</a>
       </div>
     </section>
   </main>
@@ -69,5 +75,15 @@
     <p><strong>Direitos reservados a Pink Coders</strong></p>
     <p>© 2024 | Pink Coders</p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburguer = document.querySelector('.hamburguer');
+      const navUl = document.querySelector('nav ul');
+
+      hamburguer.addEventListener('click', function () {
+        navUl.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>

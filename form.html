@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Litoral Unido</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,6 +13,11 @@
 <body>
   <header>
     <a href="index.html"><img src="./assets/images/logo.png" alt="Logo Litoral Unido"></a>
+    <div class="hamburguer">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
     <nav>
       <ul>
         <li><a href="#quem-somos" class="quem-somos">Quem somos?</a></li>
@@ -20,12 +26,12 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container--form">
     <div class="div-forms">
       <h1 class="titulo-forms">Cadastro de doador</h1>
-      <h2 class="h2-label-forms">Preencha o formulário para que você poda fazer doações em um ponto de distribuição</h2>
+      <h2 class="h2-label-forms">Preencha o formulário para que você poda fazer doações em um ponto de distribuição.</h2>
     </div>
-    <div class="div-forms">
+    <form class="div-forms">
       <label class="h2-label-forms" for="name">Nome Completo *</label>
       </br>
       <input class="input-forms" type="text" id="name" name="name" required>
@@ -90,7 +96,8 @@
           <input class="input-forms outros-input" type="text" id="outros" name="outros" min="1" placeholder="Exemplo: 1L - água de coco ">
         </div>
       </div>
-    </div>
+      <input type="submit" value="Cadastrar" class="btn-submit botao">
+    </form>
   </main>
   <footer>
     <p><strong>Direitos reservados a Pink Coders</strong></p>

@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburguer = document.querySelector('.hamburguer');
+  const headerNav = document.querySelector('header nav');
+
+  hamburguer.addEventListener('click', function () {
+    headerNav.classList.toggle('active');
+  });
+});
+
 document.getElementById('cep').addEventListener('blur', function() {
   var cep = this.value.replace(/\D/g, '');
   if (cep !== "") {

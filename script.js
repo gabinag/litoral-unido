@@ -24,37 +24,33 @@ document.getElementById('cep').addEventListener('blur', function() {
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
   form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+    event.preventDefault(); 
 
-    // Aqui você pode adicionar a lógica para enviar o formulário via AJAX se necessário
     const formData = new FormData(form);
     const request = new XMLHttpRequest();
     request.open("POST", form.action);
     request.send(formData);
 
-    // Exibir a mensagem de confirmação
     const modal = document.getElementById('confirmationMessage');
     const closeButtonX = document.querySelector('.close-button-x');
     const closeButtonOk = document.querySelector('.close-button');
 
     modal.style.display = 'block';
 
-    // Adicionar eventos de clique para os botões de fechar
     closeButtonX.addEventListener('click', function() {
       modal.style.display = 'none';
-      form.reset(); // Limpa o formulário após o fechamento da mensagem
+      form.reset(); 
     });
 
     closeButtonOk.addEventListener('click', function() {
       modal.style.display = 'none';
-      form.reset(); // Limpa o formulário após o fechamento da mensagem
+      form.reset();
     });
 
-    // Fechar a mensagem quando clicar fora dela
     window.addEventListener('click', function(event) {
       if (event.target === modal) {
         modal.style.display = 'none';
-        form.reset(); // Limpa o formulário após o fechamento da mensagem
+        form.reset(); 
       }
     });
   });

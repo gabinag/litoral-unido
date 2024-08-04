@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Litoral Unido</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="./assets/images/logo.png" alt="Logo Litoral Unido"></a>
+    <nav>
+      <ul>
+        <li><a href="#quem-somos" class="quem-somos">Quem somos?</a></li>
+        <li><a href="mapa.html" class="botao">Veja pontos de retirada</a></li>
+        <li><a href="form.html" class="botao botao--mod">Seja um doador</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="div-forms">
+      <h1 class="titulo-forms">Cadastro de doador</h1>
+      <h2 class="h2-label-forms">Preencha o formulário para que você poda fazer doações em um ponto de distribuição</h2>
+    </div>
+    <div class="div-forms">
+      <label class="h2-label-forms" for="name">Nome Completo *</label>
+      </br>
+      <input class="input-forms" type="text" id="name" name="name" required>
+      <div class="input-row">
+        <div class="input-group">
+          <label class="h2-label-forms" for="email">E-mail *</label>
+          <input class="input-forms email" type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label class="h2-label-forms" for="telefone">Telefone *</label>
+          <input class="input-forms telefone" type="tel" id="phone" name="phone" pattern="([0-9]{2})[0-9]{4}-[0-9]{4}">
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label class="h2-label-forms" for="cep">CEP *</label>
+          <input class="input-forms cep" type="text" id="cep" name="cep" required>
+        </div>
+        <div class="input-group">
+          <label class="h2-label-forms" for="cidade">Cidade</label>
+          <input class="input-forms cidade" type="text" id="cidade" name="cidade" readonly>
+        </div>
+        <div class="input-group">
+          <label class="h2-label-forms" for="uf">UF</label>
+          <input class="input-forms uf" type="text" id="uf" name="uf" readonly>
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label class="h2-label-forms" for="endereco">Endereço</label>
+          <input class="input-forms endereco" type="text" id="endereco" name="endereco" readonly>
+        </div>
+        <div class="input-group">
+          <label class="h2-label-forms" for="numero">Número *</label>
+          <input class="input-forms numero" type="text" id="numero" name="numero" required>
+        </div>
+        <div class="input-group">
+          <label class="h2-label-forms" for="complemento">Complemento</label>
+          <input class="input-forms complemento" type="text" id="complemento" name="complemento" required>
+        </div>
+      </div>
+      <h2 class="titulo-forms">Itens que serão doados</h2>
+      <div class="div-donation">
+        <div>
+          <input class="input-donation" type="number" id="ventilador" name="ventilador" min="0" placeholder="0">
+          <label class="h2-label-forms" for="ventilador">Ventilador</label>
+        </div>
+        <div>
+          <input class="input-donation" type="number" id="agua-potavel" name="agua potavel" min="0" placeholder="0">
+          <label class="h2-label-forms" for="agua-potavel">Água Potável</label>
+        </div>
+        <div>
+          <input class="input-donation" type="number" id="protetor-solar" name="protetor solar" min="0" placeholder="0">
+          <label class="h2-label-forms" for="protetor-solar">Protetor Solar</label>
+        </div>
+        <div>
+          <input class="input-donation" type="number" id="kit-cuidados" name="kit cuidados" min="0" placeholder="0">
+          <label class="h2-label-forms" for="kit-cuidados">Kit cuidados no calor (Água + Protetor solar)</label>
+        </div>
+        <div class="div-donation outros">
+          <label class="h2-label-forms" for="outros">Outros (Informar Quantidade):</label>
+          <input class="input-forms outros-input" type="text" id="outros" name="outros" min="1" placeholder="Exemplo: 1L - água de coco ">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p><strong>Direitos reservados a Pink Coders</strong></p>
+    <p>© 2024 | Pink Coders</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

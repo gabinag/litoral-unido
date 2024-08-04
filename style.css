@@ -180,7 +180,6 @@ footer {
   color: var(--azul-escuro);
 }
 
-//mapa
 .mapa {
   display: flex;
 }
@@ -199,7 +198,7 @@ footer {
   background: white;
   padding: 1rem;
   height: 100vh;
-  max-width: 18rem; 
+  max-width: 18rem;
 }
 
 .aba-mapa p {
@@ -268,11 +267,11 @@ iframe {
   content: "";
   display: inline-block;
   background-image: url("./assets/images/icon-pin2.png");
-  width: 1.5rem; 
-  height: 1.5rem; 
-  background-size: contain; 
-  background-repeat: no-repeat; 
-  margin-right: .5rem; 
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: .5rem;
 }
 
 .ponto-coleta .estoque {
@@ -287,3 +286,102 @@ iframe {
 .ponto-coleta a {
   text-align: center;
 }
+
+.titulo-forms {
+  margin-top: 70px;
+  font-size: 2rem;
+  color: #1E5E71;
+}
+
+.h2-label-forms {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #00394B;
+  max-width: 40rem;
+}
+
+.div-forms {
+  margin-top: 45px;
+  margin-left: 200px;
+}
+
+.input-forms {
+  margin-top: 10px;
+  border-radius: 4px;
+  padding-left: 5px;
+  font-size: 1rem;
+  width: 1130px;
+  height: 40px;
+  box-shadow: none;
+  border: 2px solid #1E5E71;
+  outline: none;
+}
+
+.input-row {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  width: 600px;
+  margin-right: 60px;
+}
+
+.telefone {
+  width: 470px;
+}
+
+.cep {
+  width: 430px;
+  margin-right: 30px;
+}
+
+.cidade {
+  width: 400px;
+  margin-right: 30px;
+}
+
+.uf {
+  width: 240px;
+}
+
+.endereco {
+  width: 480px;
+  margin-right: 40px;
+}
+
+.numero {
+  width: 200px;
+  margin-right: 50px;
+}
+
+.complemento {
+  width: 360px;
+}
+
+.div-donation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 1rem;
+}
+
+.outros {
+  margin-top: 5px;
+}
+
+.outros-input {
+  width: 500px;
+}
+
+.input-donation {
+  width: 55px;
+  height: 30px;
+  padding-left: 5px;
+  margin-right: 8px;
+  }

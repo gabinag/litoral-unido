@@ -261,6 +261,7 @@ iframe {
   color: #000;
   font-size: .9rem;
   text-align: start;
+  max-width: 15rem;
 }
 
 .ponto-coleta .endereco::before {

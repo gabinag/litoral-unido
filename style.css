@@ -183,12 +183,6 @@ footer {
   display: flex;
 }
 
-.container-mapa {
-  display: flex;
-  flex: 1;
-  position: relative;
-}
-
 .aba-mapa {
   position: absolute;
   top: 0;
@@ -218,18 +212,11 @@ footer {
   width: 5rem;
 }
 
-iframe {
-  flex: 1;
-  border: 0;
+#map {
+  width: 100%;
   height: 100vh;
-}
-
-.pin-coleta {
-  position: absolute;
-  left: 50rem;
-  top: 10rem;
-  z-index: 1;
-  cursor: pointer;
+  position: relative;
+  z-index: -1;
 }
 
 .titulo-aba {

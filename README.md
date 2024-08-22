@@ -1,4 +1,4 @@
-Projeto desenvolvido durante o hackathon da Kipper Dev 🚀 💜   
+## Projeto desenvolvido durante o hackathon da Kipper Dev 🚀 💜   
 
 O desafio consistia em desenvolver uma solução com o tema "Tecnologia Contra Crises Climáticas: Soluções para Cidades Resilientes", e nossa proposta abordou o problema do calor extremo. Desenvolvemos uma plataforma para facilitar a coleta de doações de itens essenciais, como água, protetor solar e ventiladores, para ajudar a enfrentar os dias mais quentes.  
 
